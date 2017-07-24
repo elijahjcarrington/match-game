@@ -59,34 +59,81 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  margin: 20px;
+  margin: 5.25rem;
+  flex-wrap: nowrap;
 }
 
 
 /*Column left*/
 
 #col-left {
-  border: 1px solid red;
   float: left;
   flex: 1 30%;
   min-width: 100px;
+  margin-right: 30px;
 }
-
-#col-left .content {}
 
 #col-left .content h6 {
   margin-bottom: 0;
+}
+
+@media only screen and (max-width: 500px) {
+  #columns {
+    flex-wrap: wrap;
+  }
+  #col-left .content {
+    margin-bottom: 5rem;
+  }
 }
 
 
 /*Column right*/
 
 #col-right {
-  border: 1px solid red;
   float: right;
-  height: 100px;
   flex: 0 70%;
-  min-width: 100px;
+}
+
+#col-right .cards {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+
+#col-right .cards .row {
+  width: 100%;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+  overflow: hidden;
+  margin-bottom: -6px;
+}
+
+#col-right .cards .card {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 2px;
+  margin: 4px;
+  padding: 10px;
+  background-color: rgb(32, 64, 86);
+}
+
+@media only screen and (max-width: 400px) {
+  #col-right .cards {
+    margin: 0 auto;
+    width: 70%;
+  }
+  #col-right .cards .card {
+    margin: 2px;
+    width: 10rem;
+    height: 7rem;
+    padding: 2px;
+  }
+}
+
+.highlight {
+  color: white;
 }
 
 
