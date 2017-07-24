@@ -41,12 +41,6 @@ p {
   font-size: 1rem;
 }
 
-.card h1 {
-  font-weight: 900;
-  font-size: 7rem;
-  color: white;
-}
-
 #main {
   width: auto;
   clear: both;
@@ -73,8 +67,16 @@ p {
   margin-right: 30px;
 }
 
+#col-left .content h2 {
+  margin-bottom: 2rem;
+}
+
 #col-left .content h6 {
-  margin-bottom: 0;
+  margin-bottom: 1rem;
+}
+
+#col-left .content p {
+  margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 500px) {
@@ -82,7 +84,7 @@ p {
     flex-wrap: wrap;
   }
   #col-left .content {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -119,6 +121,19 @@ p {
   background-color: rgb(32, 64, 86);
 }
 
+#col-right .cards .card h1 {
+  font-weight: 900;
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 2.25rem;
+  color: white;
+  cursor: default;
+}
+
+#col-right .cards .card h1:hover {
+  cursor: default;
+}
+
 @media only screen and (max-width: 400px) {
   #col-right .cards {
     margin: 0 auto;
@@ -130,6 +145,10 @@ p {
     height: 7rem;
     padding: 2px;
   }
+  #col-right .cards .card h1 {
+    margin-top: 2rem;
+    font-size: 3rem;
+  }
 }
 
 .highlight {
@@ -137,19 +156,21 @@ p {
 }
 
 
-/*Global*/
+/*Colors*/
+
+/*
+hsl(25, 85%, 65%);
+hsl(55, 85%, 65%);
+hsl(90, 85%, 65%);
+hsl(160, 85%, 65%);
+hsl(220, 85%, 65%);
+hsl(265, 85%, 65%);
+hsl(310, 85%, 65%);
+hsl(360, 85%, 65%);
+*/
 
 
-/*Global*/
+/**/
 
 
-/*Global*/
-
-
-/*Global*/
-
-
-/*Global*/
-
-
-/*Global*/
+/**/
