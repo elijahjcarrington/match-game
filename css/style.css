@@ -1,0 +1,108 @@
+/*Global*/
+
+html, body {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 6px;
+  background: rgb(255, 242, 242);
+  color: rgb(32, 64, 86);
+  font-family: 'Work Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.card h1 {
+  font-weight: 900;
+  font-size: 7rem;
+  color: white;
+}
+
+#main {
+  width: auto;
+  clear: both;
+}
+
+
+/*Columns*/
+
+#columns {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+
+/*Column left*/
+
+#col-left {
+  border: 1px solid red;
+  float: left;
+  flex: 1 30%;
+  min-width: 100px;
+}
+
+#col-left .content {}
+
+#col-left .content h6 {
+  margin-bottom: 0;
+}
+
+
+/*Column right*/
+
+#col-right {
+  border: 1px solid red;
+  float: right;
+  height: 100px;
+  flex: 0 70%;
+  min-width: 100px;
+}
+
+
+/*Global*/
+
+
+/*Global*/
+
+
+/*Global*/
+
+
+/*Global*/
+
+
+/*Global*/
+
+
+/*Global*/
