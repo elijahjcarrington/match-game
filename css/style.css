@@ -38,7 +38,8 @@ h6 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
 }
 
 #main {
@@ -93,60 +94,50 @@ p {
 
 #col-right {
   float: right;
-  flex: 0 70%;
+  flex: 0 100%;
+  width: 100%;
 }
 
-#col-right .cards {
+#col-right #game {
+  width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   flex-flow: row wrap;
 }
 
-#col-right .cards .row {
-  width: 100%;
-  margin: 1rem;
-  display: flex;
-  justify-content: space-around;
-  flex-flow: row nowrap;
-  overflow: hidden;
-  margin-bottom: -6px;
-}
-
-#col-right .cards .card {
-  width: 10rem;
-  height: 10rem;
+#col-right #game .card {
+  flex: 0 24%;
+  margin: 0.5%;
+  height: 13rem;
   border-radius: 2px;
-  margin: 4px;
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(32, 64, 86);
 }
 
-#col-right .cards .card h1 {
+#col-right #game .card h1 {
   font-weight: 900;
   font-size: 5rem;
   text-align: center;
-  margin-top: 2.25rem;
   color: white;
   cursor: default;
 }
 
-#col-right .cards .card h1:hover {
+#col-right #game .card h1:hover {
   cursor: default;
 }
 
 @media only screen and (max-width: 400px) {
-  #col-right .cards {
+  #col-right #game {
     margin: 0 auto;
-    width: 70%;
+    width: 100%;
   }
-  #col-right .cards .card {
-    margin: 2px;
-    width: 10rem;
-    height: 7rem;
-    padding: 2px;
+  #col-right #game .card {
+    height: 6rem
   }
-  #col-right .cards .card h1 {
-    margin-top: 2rem;
+  #col-right #game .card h1 {
+    font-weight: 700;
     font-size: 3rem;
   }
 }
@@ -154,20 +145,6 @@ p {
 .highlight {
   color: white;
 }
-
-
-/*Colors*/
-
-/*
-hsl(25, 85%, 65%);
-hsl(55, 85%, 65%);
-hsl(90, 85%, 65%);
-hsl(160, 85%, 65%);
-hsl(220, 85%, 65%);
-hsl(265, 85%, 65%);
-hsl(310, 85%, 65%);
-hsl(360, 85%, 65%);
-*/
 
 
 /**/
