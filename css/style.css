@@ -116,7 +116,7 @@ p {
   background-color: rgb(32, 64, 86);
 }
 
-#col-right #game .card h1 {
+#col-right #game .card {
   font-weight: 900;
   font-size: 5rem;
   text-align: center;
@@ -124,7 +124,7 @@ p {
   cursor: default;
 }
 
-#col-right #game .card h1:hover {
+#col-right #game .card:hover {
   cursor: default;
 }
 
@@ -134,9 +134,7 @@ p {
     width: 100%;
   }
   #col-right #game .card {
-    height: 6rem
-  }
-  #col-right #game .card h1 {
+    height: 6rem;
     font-weight: 700;
     font-size: 3rem;
   }
